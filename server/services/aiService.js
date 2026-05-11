@@ -132,7 +132,7 @@ Responda APENAS com um JSON válido, sem texto antes ou depois, neste formato ex
 }`;
 
   const response = await client.messages.create({
-    model: 'claude-3-5-sonnet-20241022',
+    model: 'claude-3-haiku-20240307',
     max_tokens: 8000,
     messages: [{ role: 'user', content: prompt }]
   });
@@ -172,7 +172,7 @@ Responda APENAS com JSON:
 ]`;
 
   const response = await client.messages.create({
-    model: 'claude-3-5-sonnet-20241022',
+    model: 'claude-3-haiku-20240307',
     max_tokens: 2000,
     messages: [{ role: 'user', content: prompt }]
   });
