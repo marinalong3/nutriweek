@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-brand-cream text-brand-dark font-sans;
+    -webkit-font-smoothing: antialiased;
+  }
+  * { box-sizing: border-box; }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-brand-green hover:bg-brand-green-dark text-white font-semibold px-6 py-3 rounded-xl transition-all duration-200 shadow-sm hover:shadow-md active:scale-95;
+  }
+  .btn-secondary {
+    @apply bg-white border-2 border-brand-green text-brand-green hover:bg-brand-green hover:text-white font-semibold px-6 py-3 rounded-xl transition-all duration-200;
+  }
+  .btn-orange {
+    @apply bg-brand-orange hover:opacity-90 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-200 shadow-sm hover:shadow-md active:scale-95;
+  }
+  .card {
+    @apply bg-white rounded-2xl shadow-sm border border-gray-100 p-6;
+  }
+  .input {
+    @apply w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 outline-none transition-all duration-200 text-brand-dark;
+  }
+  .badge-green {
+    @apply bg-green-100 text-green-700 text-xs font-semibold px-2.5 py-1 rounded-full;
+  }
+  .badge-blue {
+    @apply bg-blue-100 text-blue-700 text-xs font-semibold px-2.5 py-1 rounded-full;
+  }
+  .badge-orange {
+    @apply bg-orange-100 text-orange-700 text-xs font-semibold px-2.5 py-1 rounded-full;
+  }
+}
